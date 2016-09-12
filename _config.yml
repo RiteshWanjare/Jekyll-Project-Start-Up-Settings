@@ -1,0 +1,51 @@
+# Site settings
+title: 
+email: 
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  
+
+# Build settings
+markdown: kramdown
+
+# page_gen:
+#   - data: 'members'
+#     template: 'profile'
+#     name: 'name'
+#     dir: 'people'
+
+
+gems:
+  - jekyll-assets
+  - jekyll-press
+
+assets:
+  compress:
+    css: true
+    js: true
+  cache: .asset-cache
+  cdn: https://cdn.example.com
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  assets:
+    - "*.png"
+    - "bundle.css"
+  digest: true
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+
+jekyll-press:
+  js_options: {}
+  css_options: {}
+  html_options: {}
+
+collections:
+  jobs:
+    output: false
+
